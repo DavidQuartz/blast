@@ -1,8 +1,14 @@
 from Bio.Seq import Seq
+from Bio import SeqIO
 
-dna_dog = "ATGTGTGTCTGCTCGCT"
-dna_cat = "ATGCGTGATGATGCGAT"
+# dna_dog = "ATGTGTGTCTGCTCGCT"
+# dna_cat = "ATGCGTGATGATGCGAT"
 
-hybrid = Seq(dna_dog + dna_cat)
+# hybrid = Seq(dna_dog + dna_cat)
 
-print(hybrid)
+# print(hybrid)
+
+for seq_record in SeqIO.parse("./nucleotide/sequence.fasta", "fasta"):
+    print(seq_record.id)
+    print(len(seq_record))
+    print(repr(seq_record.seq))
