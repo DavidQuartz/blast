@@ -16,7 +16,7 @@ pip install virtualenv
 ## Installation
 1. First, clone the repository to your local machine:
 ```cmd
-git clone https://github.com/<YourUserName>/blast.git
+git clone https://github.com/DavidQuartz/blast.git
 ```
 
 2. Navigate to the project directory:
