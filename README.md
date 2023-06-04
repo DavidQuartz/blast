@@ -27,7 +27,9 @@ cd blast
 3. Set up a Python virtual environment and activate it:
 ```cmd
 python -m venv env
-source env/bin/activate
+source env/bin/activate  # On Unix or MacOS
+.\env\Scripts\activate   # On Windows
+
 ```
 
 4. Install the project dependencies:
